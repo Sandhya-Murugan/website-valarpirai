@@ -36,7 +36,7 @@ const ProductDetail = () => {
             <div className="card-details">
                 <h1>{card.title}</h1>
                 <p>{card.description}</p>
-                <img src={card.imageSrc} alt="Image" />
+                <img src={card.imageSrc} alt="CardImage" />
                 <AskQuery title={card.title} description={card.description} />
             </div>
             <button className="next-button" onClick={goToNextCard}>

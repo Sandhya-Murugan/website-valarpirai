@@ -1,8 +1,7 @@
 import React from 'react';
-import {Card, Col, Button, Carousel} from 'antd';
+import {Card, Col,Carousel} from 'antd';
 import {Link} from "react-router-dom";
 import AskQuery from "./AskQuery";
-import {LeftOutlined, RightOutlined} from "@ant-design/icons";
 import "../App.css"
 
 const { Meta } = Card;

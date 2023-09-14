@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import {Layout, Row, Col, Typography, Button} from 'antd';
-import { FacebookOutlined, InstagramOutlined, YoutubeOutlined,  WhatsAppOutlined,TwitterOutlined} from '@ant-design/icons';
+import {Layout, Row, Col} from 'antd';
+import { FacebookOutlined, InstagramOutlined, YoutubeOutlined,  WhatsAppOutlined} from '@ant-design/icons';
 import '../App.css'
 const { Footer } = Layout;
-const { Title, Text } = Typography;
+
 
 const AppFooter = () => {
     const handleWhatsAppClick = () => {

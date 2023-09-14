@@ -1,11 +1,9 @@
 import {items} from "../Assets/HeaderData";
 import { MenuOutlined } from '@ant-design/icons';
-import {Menu, Layout, Modal, Drawer} from "antd";
+import {Menu,Drawer} from "antd";
 import {useState} from "react";
 import useBreakpoint from "antd/es/grid/hooks/useBreakpoint";
 
-
-const {Header } = Layout;
 const HeaderMenu = () => {
     const screens = useBreakpoint();
     const isMobile = !screens.md;
@@ -34,7 +32,7 @@ const HeaderMenu = () => {
 
             <Drawer
                 title="Menu"
-                visible={modalVisible}
+                open={modalVisible}
                 onClose={toggleModal}
                 placement = "right"
                 footer={null}

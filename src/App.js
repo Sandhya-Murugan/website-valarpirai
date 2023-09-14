@@ -5,7 +5,7 @@ import HomePage from "./Pages/HomePage";
 import HeaderMenu from "./Components/Header";
 import Footer from "./Components/Footer";
 
-function App({cardData}) {
+function App() {
   return (
     <div className="App">
         <HeaderMenu />
