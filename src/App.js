@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
         <HeaderMenu />
+        {/*<HomePage />*/}
         <div style={{marginTop:"5%"}}>
             <Routes>
                 <Route path='/' element={<HomePage/>}></Route>
@@ -16,10 +17,8 @@ function App() {
                 <Route path="/productDetails/:cardSet/:id" element={<ProductDetail />} />
             </Routes>
         </div>
-
         <Footer />
     </div>
   );
 }
-
 export default App;

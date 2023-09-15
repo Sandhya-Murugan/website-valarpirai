@@ -2,7 +2,8 @@ import {items} from "../Assets/HeaderData";
 import { MenuOutlined } from '@ant-design/icons';
 import {Menu,Drawer} from "antd";
 import {useState} from "react";
-import useBreakpoint from "antd/es/grid/hooks/useBreakpoint";
+import useBreakpoint from "antd/es/grid/hooks/useBreakpoint"
+import {Link} from "react-router-dom";
 
 const HeaderMenu = () => {
     const screens = useBreakpoint();
@@ -23,7 +24,9 @@ const HeaderMenu = () => {
                         className="header-menu"
                     >
                         {items.map((item) => (
-                            <Menu.Item key={item.key}>{item.label}</Menu.Item>
+                            <Menu.Item key={item.key}>
+                                <Link to={item.url}>{item.label}</Link>
+                            </Menu.Item>
                         ))}
                     </Menu>
             ) : (
