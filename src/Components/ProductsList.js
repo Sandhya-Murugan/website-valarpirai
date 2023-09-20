@@ -1,8 +1,9 @@
 import React from 'react';
-import {Card, Col,Carousel} from 'antd';
+import {Card, Col, Carousel, Button} from 'antd';
 import {Link} from "react-router-dom";
 import AskQuery from "./AskQuery";
 import "../App.css"
+import {LeftOutlined, RightOutlined} from "@ant-design/icons";
 
 const { Meta } = Card;
 
@@ -38,9 +39,21 @@ const MyCards = ({cardData, cardSet}) => {
 
     const carouselRef = React.useRef();
 
+    const handlePrev = () => {
+        if (carouselRef.current) {
+            carouselRef.current.prev();
+        }
+    };
+
+    const handleNext = () => {
+        if (carouselRef.current) {
+            carouselRef.current.next();
+        }
+    };
+
     return (
         <div>
-            <Carousel  responsive={responsiveSettings} dotPosition="none" ref={carouselRef}  >
+            <Carousel  responsive={responsiveSettings} dotPosition="none" ref={carouselRef}>
                 {cardData.map((card, index) => (
                     <Col key={index} xs={23} sm={20} md={20} lg={20}>
                         <Link to={`/productDetails/${cardSet}/${index}`}>
@@ -70,6 +83,14 @@ const MyCards = ({cardData, cardSet}) => {
                     </Col>
                 ))}
             </Carousel>
+            <div className="carousel-nav">
+                <LeftOutlined className="prev-button" onClick={handlePrev}>
+                    Previous
+                </LeftOutlined>
+                <RightOutlined className="next-button" onClick={handleNext}>
+                    Next
+                </RightOutlined>
+            </div>
 
         </div>
 
