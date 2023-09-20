@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/website-valarpirai/static/css/main.ca4ee2b1.css",
-    "main.js": "/website-valarpirai/static/js/main.4ebb5980.js",
+    "main.css": "/website-valarpirai/static/css/main.cd430507.css",
+    "main.js": "/website-valarpirai/static/js/main.4507104b.js",
     "static/js/787.bc7d429a.chunk.js": "/website-valarpirai/static/js/787.bc7d429a.chunk.js",
     "index.html": "/website-valarpirai/index.html",
-    "main.ca4ee2b1.css.map": "/website-valarpirai/static/css/main.ca4ee2b1.css.map",
-    "main.4ebb5980.js.map": "/website-valarpirai/static/js/main.4ebb5980.js.map",
+    "main.cd430507.css.map": "/website-valarpirai/static/css/main.cd430507.css.map",
+    "main.4507104b.js.map": "/website-valarpirai/static/js/main.4507104b.js.map",
     "787.bc7d429a.chunk.js.map": "/website-valarpirai/static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca4ee2b1.css",
-    "static/js/main.4ebb5980.js"
+    "static/css/main.cd430507.css",
+    "static/js/main.4507104b.js"
   ]
 }
