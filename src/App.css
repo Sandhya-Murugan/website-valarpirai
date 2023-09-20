@@ -2,23 +2,57 @@
   text-align: center;
 }
 
-/* CardDetails.css */
-.card-details-container {
+/* Products Details Page */
+.product-details-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+.product-details-container > div {
   padding: 5%;
+}
+.product-details-left{
+  width:50%
+}
+.product-details-right{
+  width:50%
+}
+.v1{
+  border-left: 3px solid black;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 10%;
+
+}
+
+
+/* Previous and next button on products list page */
+.carousel-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px; /* Adjust the margin as needed */
 }
 
 .prev-button,
 .next-button {
-  background: none;
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
   border: none;
-  font-size: 24px;
+  padding: 8px 16px; /* Adjust padding as needed */
   cursor: pointer;
+  border-radius: 4px; /* Add rounded corners if desired */
+  /*margin-bottom: 10%;*/
+
 }
 
-.card-details {
-  flex: 1;
-  text-align: center;
+.prev-button:hover,
+.next-button:hover {
+  background-color: #0056b3; /* Hover background color */
 }
+
+.prev-button {
+  margin-right: 10px; /* Spacing between buttons */
+  margin-top: 0;
+}
+/*----------------------------------------------------------------------------------------*/
