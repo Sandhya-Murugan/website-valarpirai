@@ -10,7 +10,7 @@ function App() {
     <div className="App">
         <HeaderMenu />
         {/*<HomePage />*/}
-        <div style={{marginTop:"5%"}}>
+        <div>
             <Routes>
                 <Route path='/' element={<HomePage/>}></Route>
                 {/*<Route path="/productDetails" element={<CardDetails />}></Route>*/}
