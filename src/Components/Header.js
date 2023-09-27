@@ -4,6 +4,7 @@ import {Menu,Drawer} from "antd";
 import {useState} from "react";
 import useBreakpoint from "antd/es/grid/hooks/useBreakpoint"
 import {Link} from "react-router-dom";
+import {Header} from "antd/es/layout/layout";
 
 const HeaderMenu = () => {
     const screens = useBreakpoint();
@@ -17,6 +18,7 @@ const HeaderMenu = () => {
         <>
             {!isMobile ? (
 
+                <Header>
                     <Menu
                         theme="dark"
                         mode="horizontal"
@@ -29,6 +31,8 @@ const HeaderMenu = () => {
                             </Menu.Item>
                         ))}
                     </Menu>
+                </Header>
+
             ) : (
                 <MenuOutlined className="burger-menu" onClick={toggleModal} />
             )}

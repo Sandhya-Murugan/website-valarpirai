@@ -1,6 +1,7 @@
 import ProductsList from "../Components/ProductsList";
 import {cardData1} from "../Assets/ProductsData";
 import {cardData2} from "../Assets/ProductsData";
+import SearchBar from "../Components/SearchBar";
 
 function ProductListPage() {
     return (

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Card, Col, Carousel, Button} from 'antd';
 import {Link} from "react-router-dom";
 import AskQuery from "./AskQuery";
 import "../App.css"
 import {LeftOutlined, RightOutlined} from "@ant-design/icons";
+import {cardData1} from "../Assets/ProductsData";
 
 const { Meta } = Card;
 
@@ -54,9 +55,9 @@ const MyCards = ({cardData, cardSet}) => {
     return (
         <div>
             <Carousel  responsive={responsiveSettings} dotPosition="none" ref={carouselRef}>
-                {cardData.map((card, index) => (
-                    <Col key={index} xs={23} sm={20} md={20} lg={20}>
-                        <Link to={`/productDetails/${cardSet}/${index}`}>
+                {cardData.map((card,id) => (
+                    <Col key={id} xs={23} sm={20} md={20} lg={20}>
+                        <Link to={`/productDetails/${cardSet}/${id}`}>
                             <Card
                                 hoverable
                                 style={{ minHeight: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
